@@ -1,2 +1,2 @@
 # dsa-practice
-Solving question on data structure
+Solving questions on data structure
