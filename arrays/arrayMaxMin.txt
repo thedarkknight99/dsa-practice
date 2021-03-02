@@ -1,0 +1,29 @@
+/*
+https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
+https://ide.geeksforgeeks.org/qSHM7dJdJU
+*/
+
+*****Method 1*****
+//Using heap data structure
+
+import java.io.*;
+import java.util.*;
+
+class maxminArray {
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int arr[] = new int[n];
+		PriorityQueue<Integer> minHeap = new PriorityQueue<>();  //default - min heap
+		PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+		for(int i=0; i<n; i++){
+		    arr[i] = sc.nextInt();
+		    minHeap.add(arr[i]);
+		    maxHeap.add(arr[i]);
+		}
+		int min = minHeap.poll();
+		int max = maxHeap.poll();
+		System.out.println(min);
+		System.out.println(max);
+	}
+}
