@@ -1,0 +1,33 @@
+/*
+Write a program to reverse an array or string
+https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/
+https://practice.geeksforgeeks.org/problems/reverse-a-string/1#
+Time Complexity : O(n)
+*/
+
+//User function Template for Java
+
+
+class Reverse
+{
+    // Complete the function
+    // str: input string
+    public static String reverseWord(String str)
+    {
+        // Reverse the string str
+        int n = str.length();
+        int start = 0;
+        int end = n-1;
+        char[] ch = str.toCharArray(); 
+        while(start < end){
+            //swap first and end variable
+            char temp = ch[start];
+            ch[start] = ch[end];
+            ch[end] = temp;
+            end--;
+            start++;
+        }
+        String s = new String(ch);
+        return s;
+    }
+}
