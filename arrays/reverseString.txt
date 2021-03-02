@@ -8,7 +8,7 @@ Time Complexity : O(n)
 //User function Template for Java
 
 
-class Reverse
+class reverseString
 {
     // Complete the function
     // str: input string
