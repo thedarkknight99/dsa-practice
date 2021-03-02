@@ -15,7 +15,7 @@ class maxminArray {
 		int n = sc.nextInt();
 		int arr[] = new int[n];
 		PriorityQueue<Integer> minHeap = new PriorityQueue<>();  //default - min heap
-		PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+		PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());  //max heap
 		for(int i=0; i<n; i++){
 		    arr[i] = sc.nextInt();
 		    minHeap.add(arr[i]);
